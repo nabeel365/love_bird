@@ -405,6 +405,19 @@ export default function Home() {
         isOpen={isVideoModalOpen}
         onClose={() => setIsVideoModalOpen(false)}
       />
+
+      {/* Footer Credits */}
+      <footer className="absolute bottom-6 left-0 right-0 z-30 flex items-center justify-center gap-1.5 text-[11px] md:text-xs font-semibold tracking-wider uppercase text-rose-500/80 dark:text-pink-300/60 select-none">
+        <span>Designed & Developed by</span>
+        <a
+          href="https://nabeelsdevhub.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative text-rose-600 dark:text-pink-300 transition-colors duration-200 hover:text-rose-700 dark:hover:text-pink-100 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-full after:h-[1.5px] after:bg-current after:origin-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-left after:transition-transform after:duration-300"
+        >
+          Nabeel Choudhuri
+        </a>
+      </footer>
     </main>
   );
 }
